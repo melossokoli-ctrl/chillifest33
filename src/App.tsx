@@ -37,7 +37,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between gap-4">
           <a href="#top" className="flex items-center gap-3 shrink-0 nav-link">
             <img
-              src="/assets/logo.png"
+              src="/assets/logo-CXH1cZxZ.jpg"
               alt="ChilliFestë"
               className="w-11 h-11 rounded-full animate-spin-slow object-cover ring-2 ring-accent/40"
             />
@@ -277,7 +277,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <img
-              src="/assets/logo.png"
+              src="/assets/logo-CXH1cZxZ.jpg"
               alt="ChilliFestë"
               width={36}
               height={36}

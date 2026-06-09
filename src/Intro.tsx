@@ -29,7 +29,7 @@ export default function Intro({ children }: Props) {
     >
       <div className="absolute w-[60vmin] h-[60vmin] rounded-full bg-primary/20 blur-[120px] pointer-events-none" />
       <img
-        src="/assets/logo.png"
+        src="/assets/logo-CXH1cZxZ.jpg"
         alt="ChilliFestë"
         style={{ width: "220px", height: "220px" }}
         className="relative rounded-full object-cover ring-2 ring-accent/40 animate-spin-slow shadow-2xl"
