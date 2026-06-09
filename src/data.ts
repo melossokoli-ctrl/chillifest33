@@ -9,36 +9,42 @@ export type GalleryItem = {
 
 export const galleryByYear: Record<GalleryYear, GalleryItem[]> = {
   "2025": [
-    { image: "/assets/buta-DgG--UY6.jpg", alt: "Buta", festival: "AgroFest 2025", name: "Buta" },
-    { image: "/assets/kida-DgHpFWPN.jpg", alt: "Kida", festival: "AgroFest 2025", name: "Kida" },
-    { image: "/assets/kresha-BgUKN23R.jpg", alt: "Kresha", festival: "AgroFest 2025", name: "Kresha" },
-    { image: "/assets/lumi-Bb0ypC5A.jpg", alt: "Lumi B", festival: "AgroFest 2025", name: "Lumi B" },
-    { image: "/assets/melinda-DoTORd45.jpg", alt: "Melinda", festival: "AgroFest 2025", name: "Melinda" },
-    { image: "/assets/singi-Cvjuiyc8.jpg", alt: "Singi", festival: "AgroFest 2025", name: "Singi" },
+    { image: "/assets/buta-DgG--UY6.jpg", alt: "Buta", festival: "AgroFesta 2025", name: "Buta" },
+    { image: "/assets/kida-DgHpFWPN.jpg", alt: "Kida", festival: "AgroFesta 2025", name: "Kida" },
+    { image: "/assets/kresha-BgUKN23R.jpg", alt: "Kresha", festival: "AgroFesta 2025", name: "Kresha" },
+    { image: "/assets/lumi-Bb0ypC5A.jpg", alt: "Lumi B", festival: "AgroFesta 2025", name: "Lumi B" },
+    { image: "/assets/melinda-DoTORd45.jpg", alt: "Melinda", festival: "AgroFesta 2025", name: "Melinda" },
+    { image: "/assets/singi-Cvjuiyc8.jpg", alt: "Singi", festival: "AgroFesta 2025", name: "Singi" },
   ],
   "2024": [
-    { image: "/assets/artist1-B2KtxU_Y.jpeg", alt: "YaNina", festival: "AgroFest 2024", name: "YaNina" },
+    { image: "/assets/artist1-B2KtxU_Y.jpeg", alt: "YaNina", festival: "AgroFesta 2024", name: "YaNina" },
     {
       image: "/assets/artist2-Oskg08CE.jpeg",
       alt: "Bletapërtace",
-      festival: "AgroFest 2024",
+      festival: "AgroFesta 2024",
       name: "Bletapërtace",
     },
     {
       image: "/assets/artist3-1z4ZZExm.jpeg",
       alt: "Luiz Ejlli",
-      festival: "AgroFest 2024",
+      festival: "AgroFesta 2024",
       name: "Luiz Ejlli",
     },
   ],
 };
 
 export const galleryFooter: Record<GalleryYear, string> = {
-  "2025": "Edicioni i fundit AgroFest",
+  "2025": "Edicioni i fundit AgroFesta",
   "2024": "Momentet 2024",
 };
 
 export const historyItems = [
+  {
+    year: "2009",
+    title: "Edicioni i parë i AgroFestës",
+    description:
+      "Nis gjithçka — edicioni i parë i AgroFestës në Krushë e Madhe.",
+  },
   {
     year: "2023",
     title: "Edicion rekord",
@@ -52,7 +58,7 @@ export const historyItems = [
   },
   {
     year: "2025",
-    title: "AgroFest, edicioni i fundit",
+    title: "AgroFesta, edicioni i fundit",
     description: "Mbyllja simbolike e një kapitulli, fillimi i një identiteti të ri.",
   },
   {

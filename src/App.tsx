@@ -219,7 +219,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-accent text-sm uppercase tracking-[0.3em]">
-              Nga AgroFest → ChilliFestë
+              Nga AgroFesta → ChilliFestë
             </div>
             <h2 className="font-display text-5xl sm:text-7xl mt-2">Historiku</h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
