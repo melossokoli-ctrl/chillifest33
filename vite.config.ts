@@ -6,6 +6,9 @@ export default defineConfig({
   server: {
     host: "127.0.0.1",
     port: 5173,
+    watch: {
+      ignored: ["**/public/assets/*.mp4", "**/public/assets/*.MOV"],
+    },
   },
   preview: {
     host: "127.0.0.1",

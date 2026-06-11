@@ -10,6 +10,7 @@ import {
 import Countdown from "./Countdown";
 import Lineup2026 from "./Lineup2026";
 import Signature from "./Signature";
+import VideoBook from "./VideoBook";
 import {
   FACEBOOK_URL,
   FESTIVAL_YEAR,
@@ -57,6 +58,9 @@ export default function App() {
             </a>
             <a href="#history" className="nav-link">
               Historiku
+            </a>
+            <a href="#video" className="nav-link">
+              Video
             </a>
             <a href="#sponsors" className="nav-link">
               Sponsorët
@@ -236,6 +240,15 @@ export default function App() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section id="video" className="py-24 px-5">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="font-display text-5xl sm:text-7xl mt-2">Aftermovie</h2>
+          </div>
+          <VideoBook />
         </div>
       </section>
 

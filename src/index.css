@@ -21,6 +21,11 @@ body {
   touch-action: pan-y;
 }
 
+body,
+body * {
+  cursor: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2032%2032'%3E%3Cpath%20d='M16.5%208C13%2015%2015%2023%2020.5%2028.5C16.5%2023%2017.5%2014%2017.5%208Z'%20fill='%23e11d2a'/%3E%3Cpath%20d='M16.5%208c-1-3-2-4-5-4'%20fill='none'%20stroke='%232f8f3e'%20stroke-width='2'%20stroke-linecap='round'/%3E%3C/svg%3E") 6 6, auto;
+}
+
 #root {
   position: relative;
   overflow: visible;
@@ -78,6 +83,132 @@ body {
   font-size: 0.875rem;
   font-weight: 600;
   box-shadow: 0 4px 24px rgb(0 0 0 / 0.35);
+}
+
+/* Aftermovie i vogël */
+.aftermovie-small {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Libri i videove */
+.video-book {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.video-book__stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  perspective: 2000px;
+}
+
+.video-book__page {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--border);
+  box-shadow: 0 25px 60px rgb(0 0 0 / 0.5);
+  transform-origin: left center;
+  transform: rotateY(-105deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.video-book__page.is-active {
+  transform: rotateY(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.video-book__label {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 3;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground);
+  background: color-mix(in oklab, var(--card) 75%, transparent);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+
+.video-book__page video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #000;
+}
+
+.video-book__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.25rem;
+}
+
+.video-book__btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  border-radius: 9999px;
+  color: var(--foreground);
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+}
+
+.video-book__btn:hover:not(:disabled) {
+  background: color-mix(in oklab, var(--accent) 25%, var(--card));
+  transform: translateY(-2px);
+}
+
+.video-book__btn:disabled {
+  opacity: 0.35;
+}
+
+.video-book__dots {
+  display: flex;
+  gap: 0.55rem;
+}
+
+.video-book__dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid color-mix(in oklab, var(--accent) 60%, transparent);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.video-book__dot.is-on {
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+.video-book__counter {
+  text-align: center;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--muted-foreground);
 }
 
 .nav-link {
