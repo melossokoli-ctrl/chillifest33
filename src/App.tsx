@@ -246,7 +246,7 @@ export default function App() {
       <section id="video" className="py-24 px-5">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="font-display text-5xl sm:text-7xl mt-2">Aftermovie</h2>
+            <h2 className="font-display text-5xl sm:text-7xl mt-2">VIDEO</h2>
           </div>
           <VideoBook />
         </div>

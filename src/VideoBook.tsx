@@ -27,19 +27,21 @@ export default function VideoBook() {
     return () => window.removeEventListener("keydown", onKey);
   }, [page]);
 
+  const current = bookVideos[page];
+
   return (
     <div className="video-book">
       <div className="video-book__stage" ref={stageRef}>
-        {bookVideos.map((v, i) => (
-          <div
-            key={v.src}
-            className={"video-book__page" + (i === page ? " is-active" : "")}
-            aria-hidden={i !== page}
-          >
-            <span className="video-book__label">{v.label}</span>
-            <video src={v.src} controls playsInline preload="metadata" />
-          </div>
-        ))}
+        <div className="video-book__page is-active">
+          <span className="video-book__label">{current.label}</span>
+          <video
+            key={current.src}
+            src={current.src}
+            controls
+            playsInline
+            preload="auto"
+          />
+        </div>
       </div>
 
       <div className="video-book__nav">
